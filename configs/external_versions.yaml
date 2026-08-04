@@ -1,0 +1,20 @@
+schema_version: 1
+
+external_dependencies:
+  calibcam:
+    repository: https://github.com/bbo-lab/calibcam.git
+    commit: 1251969bc7dbe909e47308145cec369b340a6cae
+    local_path: external/calibcam
+    policy: pinned_read_only_dependency
+
+  aruco_nano:
+    repository: https://github.com/rmsalinas/aruco_nano.git
+    commit: 763c259c4595dc3ca7b7218402aa91ca6c772a68
+    local_path: external/aruco_nano
+    policy: pinned_read_only_dependency
+
+canonical_board:
+  path: resources/boards/board_small_exact_meters.npy
+  sha256: 69ef6a2f5708b978483b278d43b374a3576f908b5adfb71da8afdfab8e684ff5
+  unit: m
+  source: Kay-Michael Voit

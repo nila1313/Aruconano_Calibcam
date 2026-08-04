@@ -1,0 +1,50 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Packaging and compilation
+build/
+dist/
+*.egg-info/
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+
+# Source calibration recordings
+calibration_videos/
+
+# Generated pipeline data
+runs/
+logs/
+tmp/
+cache/
+artifacts/
+
+# Large video formats
+*.MP4
+*.mp4
+*.MOV
+*.mov
+*.AVI
+*.avi
+
+# External repositories are pinned separately
+external/calibcam/
+external/aruco_nano/
+
+# Duplicate root board file
+# The canonical tracked copy is resources/boards/board_small_exact_meters.npy
+/board_small_exact_meters.npy
