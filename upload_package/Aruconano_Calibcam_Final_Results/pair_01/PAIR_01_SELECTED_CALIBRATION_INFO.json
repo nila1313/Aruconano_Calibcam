@@ -1,0 +1,65 @@
+{
+  "stage": "selected_calibration_package",
+  "valid": true,
+  "created_at": "2026-08-05T14:47:21.320841+02:00",
+  "pair": "pair_01",
+  "folder_name": "PAIR_01_SELECTED_CALIBRATION",
+  "selected_run": "OFFSET_MINUS_1_LEFT_T_RIGHT_T_PLUS_1",
+  "synchronization": {
+    "physical_correspondence": "Left physical frame t corresponds to Right physical frame t+1",
+    "pipeline_signed_offset": -1,
+    "previous_report_physical_offset": 1,
+    "left_frame": "t",
+    "right_frame": "t+1"
+  },
+  "selected_metrics": {
+    "final_cost": 944.26,
+    "camera_0_median_px": 0.19,
+    "camera_0_maximum_px": 4.93,
+    "camera_1_median_px": 0.28,
+    "camera_1_maximum_px": 3.16,
+    "stereo_baseline_m": 0.029551790251,
+    "stereo_baseline_mm": 29.55179
+  },
+  "board": {
+    "board_type": "ChArUco",
+    "board_width": 5,
+    "board_height": 6,
+    "dictionary_type": 10,
+    "dictionary_name": "DICT_6X6_250",
+    "square_size_real_x_m": 0.019926,
+    "square_size_real_y_m": 0.02,
+    "marker_size_real_m": 0.013333333333333332,
+    "legacy": false
+  },
+  "kay_concerns": {
+    "left_detection_yml_included": true,
+    "right_detection_yml_included": true,
+    "exact_metric_board_included": true,
+    "anchor_free_multicam_calibration_yml": true
+  },
+  "important_files": {
+    "final_python_calibration": "multicam_calibration.npy",
+    "final_yaml_calibration": "multicam_calibration.yml",
+    "final_matlab_calibration": "multicam_calibration.mat",
+    "left_detection": "inputs/detection_000_left.yml",
+    "right_detection": "inputs/detection_001_right.yml",
+    "active_board": "inputs/board.npy",
+    "original_exact_board": "inputs/board_small_exact_meters.npy"
+  },
+  "file_hashes_sha256": {
+    "multicam_calibration_yml": "5bd7efff35d40909c19592977b98b7d4f5fe90dd16d165555c2577c5d8948a44",
+    "multicam_calibration_npy": "04cdfbc22bdb2d2f297c9805bf62f1328dbc4b9db476ce9e2a97e2c5c3810223",
+    "multicam_calibration_mat": "07ddd7c0106a9b7bf0fff4943fdc6f8f68c1f45995ebf2a9f08871715235240e",
+    "left_detection": "b15091a9ea676b79f8489c709e01ada8e964a573a51755c0bae5d93c44e0ac1d",
+    "right_detection": "d6ae459814c7eada48380750fc0097080a3fdbd666387e9a804bb915d734e292",
+    "active_board": "69ef6a2f5708b978483b278d43b374a3576f908b5adfb71da8afdfab8e684ff5",
+    "original_exact_board": "69ef6a2f5708b978483b278d43b374a3576f908b5adfb71da8afdfab8e684ff5"
+  },
+  "source_best_calibration": "/Users/nilamaitrachaity/Desktop/Aruconano_Calibcam/runs/pair_01/BEST_CALIBRATION",
+  "yaml_change": {
+    "anchors_removed": true,
+    "calibration_values_changed": false,
+    "note": "Only YAML serialization was changed. The loaded calibration data is identical."
+  }
+}

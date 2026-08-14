@@ -48,7 +48,7 @@ frame_selection:
   step: 20
   camera_offsets:
   - 0
-  - 0
+  - 1
 detection:
   backend: aruco_nano
   minimum_charuco_corners: 5

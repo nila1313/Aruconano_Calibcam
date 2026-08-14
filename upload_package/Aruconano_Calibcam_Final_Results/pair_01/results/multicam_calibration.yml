@@ -1,0 +1,170 @@
+calibs:
+- A:
+  - [1350.4674630839118, 0.0, 985.8866691748722]
+  - [0.0, 1351.7434192908377, 539.1215281315033]
+  - [0.0, 0.0, 1.0]
+  k: [-0.35950925684725066, 0.07810896752964984, -0.0004917149637735789, -0.003823501375113743,
+    0.032267877685372225]
+  rvec_cam: [0.0, 0.0, 0.0]
+  sensor_size: [1920, 1080]
+  tvec_cam: [0.0, 0.0, 0.0]
+  xi: [0.6347489981528759]
+- A:
+  - [1324.9793492859144, 0.0, 968.8537592010966]
+  - [0.0, 1326.5441115382646, 553.620120531948]
+  - [0.0, 0.0, 1.0]
+  k: [-0.34982233562103215, 0.01472944010001954, -1.588641196208654e-05, -0.0002489596014570586,
+    0.10005670351443274]
+  rvec_cam: [0.009690385127302654, -0.3262019691292156, -0.2644941390662041]
+  sensor_size: [1920, 1080]
+  tvec_cam: [-0.02842634059759521, 0.005375905478826076, -0.006029187968419127]
+  xi: [0.6009187777857706]
+info:
+  board_params:
+  - {boardHeight: 6, boardWidth: 5, dictionary_type: 10, legacy: false, marker_size: 0.6666666666666666,
+    marker_size_real: 0.013333333333333332, square_size: 1, square_size_real: 0.02,
+    square_size_real_x: 0.019926, square_size_real_y: 0.02, unit: m}
+  - {boardHeight: 6, boardWidth: 5, dictionary_type: 10, legacy: false, marker_size: 0.6666666666666666,
+    marker_size_real: 0.013333333333333332, square_size: 1, square_size_real: 0.02,
+    square_size_real_x: 0.019926, square_size_real_y: 0.02, unit: m}
+  opts:
+    RC_reject_corners: false
+    allow_unequal_n_frame: true
+    aruco_calibration:
+    - criteria: [3, 30, 1.1920928955078125e-07]
+      flags: 2
+    - criteria: [3, 30, 1.1920928955078125e-07]
+      flags: 2
+    calibration_multi: true
+    calibration_single: true
+    color_convert: false
+    common_pose_r_err: 0.1
+    coord_cam: 0
+    corners_min_n: 5
+    debug: true
+    detect_cpu_divisor: 6
+    detection: [runs/pair_01/work/calibcam_detections/OFFSET_MINUS_1_LEFT_T_RIGHT_T_PLUS_1/calibration_inputs/detection_000_left.yml,
+      runs/pair_01/work/calibcam_detections/OFFSET_MINUS_1_LEFT_T_RIGHT_T_PLUS_1/calibration_inputs/detection_001_right.yml]
+    detection_opts:
+      aruco_detect:
+        parameters: {adaptiveThreshWinSizeMax: 23, adaptiveThreshWinSizeMin: 3, adaptiveThreshWinSizeStep: 10,
+          cornerRefinementMaxIterations: 30, cornerRefinementMethod: 1, cornerRefinementMinAccuracy: 0.01,
+          cornerRefinementWinSize: 5, errorCorrectionRate: 0.3, perspectiveRemovePixelPerCell: 8}
+      aruco_interpolate: {minMarkers: 1}
+      aruco_refine:
+        checkAllOrders: true
+        errorCorrectionRate: 1.0
+        minRepDistance: 3.0
+        parameters: {adaptiveThreshWinSizeMax: 23, adaptiveThreshWinSizeMin: 3, adaptiveThreshWinSizeStep: 10,
+          cornerRefinementMaxIterations: 30, cornerRefinementMethod: 1, cornerRefinementMinAccuracy: 0.01,
+          cornerRefinementWinSize: 5, errorCorrectionRate: 0.3, perspectiveRemovePixelPerCell: 8}
+      clahe: true
+      inter_frame_dist: 3.0
+      min_corners: 5
+      radial_contrast_reject:
+        norm_mean: 0.311
+        normalize: 50
+        options: {lib: np}
+        width: 20
+    frames_end: 2640
+    frames_lists: false
+    frames_offsets: [0, 1]
+    frames_start: 0
+    frames_step: 20
+    free_vars:
+    - A:
+      - [true, false, true]
+      - [false, true, true]
+      - [false, false, false]
+      board_poses: true
+      cam_pose: true
+      k: [1, 1, 1, 1, 1]
+      xi: true
+    - A:
+      - [true, false, true]
+      - [false, true, true]
+      - [false, false, false]
+      board_poses: true
+      cam_pose: true
+      k: [1, 1, 1, 1, 1]
+      xi: true
+    init_extrinsics:
+      rvecs_cam:
+      - [0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0]
+      tvecs_cam:
+      - [0.0, 0.0, 0.0]
+      - [0.0, 0.0, 0.0]
+    init_extrinsics_frames: []
+    jax_backend: cpu
+    max_allowed_res: 50
+    models: [omnidir, omnidir]
+    n_cams: 2
+    numerical_jacobian: false
+    optimization: {ftol: 1.0e-09, gtol: 1.0e-09, loss: linear, max_nfev: 500, method: trf,
+      tr_solver: lsmr, verbose: 2, x_scale: jac, xtol: 1.0e-09}
+    optimize_board_poses: false
+    optimize_ind_cams: false
+    parallelize: false
+    pose_estimation: {use_required_corners: true}
+    sensorsize:
+    - [1920, 1080]
+    - [1920, 1080]
+  other: {}
+  rec_file_names: [calibration_videos/20230613/4pi/030_checkerboard_1/CADDX000013_left.MP4,
+    calibration_videos/20230613/4pi/030_checkerboard_1/CADDX000013_right.MP4]
+  used_frames_ids:
+  - [0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320,
+    340, 360, 380, 400, 420, 440, 460, 480, 500, 520, 540, 560, 580, 600, 620, 640,
+    660, 680, 700, 720, 740, 760, 780, 800, 820, 840, 860, 880, 900, 920, 940, 960,
+    980, 1000, 1020, 1040, 1060, 1080, 1100, 1120, 1140, 1160, 1180, 1200, 1220, 1240,
+    1260, 1280, 1300, 1320, 1340, 1360, 1380, 1400, 1420, 1440, 1460, 1480, 1500,
+    1520, 1540, 1560, 1580, 1600, 1620, 1640, 1660, 1680, 1700, 1720, 1740, 1760,
+    1780, 1800, 1820, 1840, 1860, 1880, 1900, 1920, 1940, 1960, 1980, 2000, 2020,
+    2040, 2060, 2080, 2100, 2120, 2140, 2160, 2180, 2200, 2220, 2240, 2260, 2280,
+    2300, 2320, 2340, 2360, 2380, 2400, 2420, 2440, 2460, 2480, 2500, 2520, 2540,
+    2560, 2580, 2600]
+  - [1, 21, 41, 61, 81, 101, 121, 141, 161, 181, 201, 221, 241, 261, 281, 301, 321,
+    341, 361, 381, 401, 421, 441, 461, 481, 501, 521, 541, 561, 581, 601, 621, 641,
+    661, -1, -1, 721, 741, 761, 781, 801, 821, 841, 861, 881, 901, 921, 941, 961,
+    981, 1001, 1021, 1041, 1061, 1081, 1101, 1121, 1141, 1161, 1181, 1201, 1221, 1241,
+    1261, 1281, 1301, 1321, 1341, 1361, 1381, 1401, 1421, 1441, 1461, 1481, 1501,
+    1521, 1541, 1561, 1581, 1601, 1621, 1641, 1661, 1681, 1701, 1721, 1741, 1761,
+    1781, 1801, 1821, 1841, 1861, 1881, 1901, 1921, 1941, 1961, 1981, 2001, 2021,
+    2041, 2061, 2081, 2101, 2121, 2141, 2161, 2181, 2201, 2221, 2241, 2261, 2281,
+    2301, 2321, 2341, 2361, 2381, 2401, 2421, 2441, 2461, 2481, 2501, 2521, 2541,
+    2561, 2581, 2601]
+  vid_headers:
+  - codec: h264
+    compatible_brands: mp41
+    creation_time: '2015-01-27T09:02:03.000000Z'
+    duration: 44.0
+    encoder: iCatch AVCC
+    fps: 60.0
+    handler_name: Video Handler
+    language: eng
+    long_codec: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+    major_brand: mp42
+    minor_version: '0'
+    num_frames: 2640
+    offset: [0, 0]
+    profile: High
+    sensorsize: [1920, 1080]
+    video_format: yuv420p
+  - codec: h264
+    compatible_brands: mp41
+    creation_time: '2015-12-14T01:57:03.000000Z'
+    duration: 44.0
+    encoder: iCatch AVCC
+    fps: 60.0
+    handler_name: Video Handler
+    language: eng
+    long_codec: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10
+    major_brand: mp42
+    minor_version: '0'
+    num_frames: 2640
+    offset: [0, 0]
+    profile: High
+    sensorsize: [1920, 1080]
+    video_format: yuv420p
+version: 4

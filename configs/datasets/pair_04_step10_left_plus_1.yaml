@@ -1,0 +1,71 @@
+schema_version: 1
+dataset:
+  id: pair_04_080_checkerboard_4_left_plus_1
+  recording_date: '2023-06-13'
+  rig: 4pi
+  root: calibration_videos/20230613/4pi/080_checkerboard_4
+cameras:
+- index: 0
+  name: left
+  video: calibration_videos/20230613/4pi/080_checkerboard_4/CADDX000023_left.MP4
+  model: omnidir
+  frame_count: 8760
+  fps: 60.0
+  width: 1920
+  height: 1080
+  codec: h264
+  size_bytes: 594214912
+  sha256: d390416174e1084d37b4e66359718f86ace17e306c0b393a1e13892e08024c25
+- index: 1
+  name: right
+  video: calibration_videos/20230613/4pi/080_checkerboard_4/CADDX000023_right.MP4
+  model: omnidir
+  frame_count: 8760
+  fps: 60.0
+  width: 1920
+  height: 1080
+  codec: h264
+  size_bytes: 594739200
+  sha256: 13428d6b95ac85961f007adafe9d3b42c30122d62267f4fdf7c753535b353ca4
+board:
+  canonical_file: runs/pair_04/work/source_snapshot/board.npy
+  canonical_sha256: b582e61df81e937431866e587894a420e214d8c61a642ea8188a38ee61f01978
+  legacy_reference_file: calibration_videos/20230613/4pi/080_checkerboard_4/board.npy
+  legacy_reference_sha256: be24cd8e2c76f99b087d7e9701a9c31988a69fcd28e392ce957ea7842fe2cc24
+  width: 7
+  height: 7
+  dictionary_id: 0
+  dictionary_name: DICT_4X4_50
+  square_size_m: 0.14285714285714285
+  square_size_x_m: 0.14285714285714285
+  square_size_y_m: 0.14285714285714285
+  marker_size_m: 0.1
+  legacy_pattern: false
+  unit: m
+frame_selection:
+  start: 0
+  end: null
+  step: 10
+  camera_offsets:
+  - 1
+  - 0
+detection:
+  backend: aruco_nano
+  minimum_charuco_corners: 5
+  retain_detection_yaml: true
+  retain_raw_detection_csv: true
+  write_annotated_frames: false
+calibration:
+  engine: calibcam
+  run_single_camera: true
+  run_multi_camera: true
+  models:
+  - omnidir
+  - omnidir
+storage:
+  extract_only_selected_frames: true
+  delete_temporary_frames_after_verified_upload: true
+  preserve_original_videos: true
+  preserve_detection_yaml: true
+  preserve_logs: true
+  preserve_calibration_outputs: true

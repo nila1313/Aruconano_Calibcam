@@ -1,0 +1,194 @@
+INFO:__main__:Starting calibcam (4.1.3)
+INFO:__main__:Options written to runs/pair_02/work/calibration_attempts/OFFSET_MINUS_1_CLEAN_ZERO_OFFSETS_01/opts.{npy/yml}
+objc[1320]: Class AVFFrameReceiver is implemented in both /Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1073f03a8) and /Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/av/.dylibs/libavdevice.62.3.101.dylib (0x1234503a8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+objc[1320]: Class AVFAudioReceiver is implemented in both /Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/cv2/.dylibs/libavdevice.61.3.100.dylib (0x1073f03f8) and /Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/av/.dylibs/libavdevice.62.3.101.dylib (0x1234503f8). This may cause spurious casting failures and mysterious crashes. One of the duplicates must be removed or renamed.
+Found [8760, 8760] frames in cams
+Setting offset to 0!
+Inferring sensor size from image
+Setting offset to 0!
+Inferring sensor size from image
+Loading detections from files
+INFO:2026-08-05 21:40:10,583:jax._src.xla_bridge:752: Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: dlopen(libtpu.so, 0x0001): tried: 'libtpu.so' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibtpu.so' (no such file), '/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/bin/../lib/libtpu.so' (no such file), '/usr/lib/libtpu.so' (no such file, not in dyld cache), 'libtpu.so' (no such file)
+INFO:jax._src.xla_bridge:Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: dlopen(libtpu.so, 0x0001): tried: 'libtpu.so' (no such file), '/System/Volumes/Preboot/Cryptexes/OSlibtpu.so' (no such file), '/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/bin/../lib/libtpu.so' (no such file), '/usr/lib/libtpu.so' (no such file, not in dyld cache), 'libtpu.so' (no such file)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: divide by zero encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: overflow encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: invalid value encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: divide by zero encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: overflow encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: invalid value encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/scipy/sparse/linalg/_isolve/lsmr.py:407: RuntimeWarning: overflow encountered in cast
+  condA = max(maxrbar, rhotemp) / min(minrbar, rhotemp)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/scipy/sparse/linalg/_isolve/lsmr.py:406: RuntimeWarning: overflow encountered in cast
+  minrbar = min(minrbar, rhobarold)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: divide by zero encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: overflow encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: invalid value encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: divide by zero encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: overflow encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: invalid value encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/scipy/sparse/linalg/_isolve/lsmr.py:407: RuntimeWarning: overflow encountered in cast
+  condA = max(maxrbar, rhotemp) / min(minrbar, rhotemp)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/scipy/sparse/linalg/_isolve/lsmr.py:406: RuntimeWarning: overflow encountered in cast
+  minrbar = min(minrbar, rhobarold)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: divide by zero encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: overflow encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: invalid value encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: divide by zero encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: overflow encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: invalid value encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/scipy/sparse/linalg/_isolve/lsmr.py:407: RuntimeWarning: overflow encountered in cast
+  condA = max(maxrbar, rhotemp) / min(minrbar, rhotemp)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/scipy/sparse/linalg/_isolve/lsmr.py:406: RuntimeWarning: overflow encountered in cast
+  minrbar = min(minrbar, rhobarold)
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: divide by zero encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: overflow encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camerasystem.py:78: RuntimeWarning: invalid value encountered in matmul
+  X_cam = X_world @ self.cameras[cam_idx]['R'].T + self.cameras[cam_idx]['t']
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: divide by zero encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: overflow encountered in matmul
+  x = x @ self.A.T
+/Users/nilamaitrachaity/miniforge3/envs/aruco_calibcam/lib/python3.10/site-packages/calibcamlib/camera.py:90: RuntimeWarning: invalid value encountered in matmul
+  x = x @ self.A.T
+INFO:__main__:Camera calibrated
+INFO:__main__:Overall procedure took 9.914876124996226 s
+Detected features in 0233 frames in camera 00 - (09±5)
+Detected features in 0075 frames in camera 01 - (08±3)
+PERFORM SINGLE CAMERA CALIBRATION
+10
+Omnidir calibration: 233 frames, 36 active corners, 36 total board corners
+233 (7, 1, 3) float64
+233 (7, 1, 2) float64
+Finished single camera calibration.
+Omnidir calibration: 75 frames, 35 active corners, 36 total board corners
+75 (6, 1, 3) float64
+75 (6, 1, 2) float64
+Finished single camera calibration.
+Used 133 frames for single cam calibration for cam 00
+Used 045 frames for single cam calibration for cam 01
+Found 0133 frames pose estimation of for cam 000
+Found 0045 frames pose estimation of for cam 001
+Orienting cam 1 on cam 0 on 320 potential poses
+Chose 32 poses.
+Mean rvec deviation: [0.01699884 0.01252485 0.00724473]
+Mean tvec deviation: [0.00635715 0.01058107 0.00276752]
+Setting offset to 0!
+Inferring sensor size from image
+Setting offset to 0!
+Inferring sensor size from image
+SAVE MULTI CAMERA CALIBRATION
+Saved multi camera calibration to file runs/pair_02/work/calibration_attempts/OFFSET_MINUS_1_CLEAN_ZERO_OFFSETS_01/joinedsingles_calibraton
+Testing objective function vs cameralib
+(Minor differences possible due to common board pose in objfun)
+Cam | n objfun      | n cameralib   | max objfun    | med objfun    | max cameralib | med cameralib | diff
+  0 |          5780 |          3622 |       1106.86 |          1.50 |          8.40 |          1.06 |          1.96
+  1 |          5780 |          3622 |        418.46 |          3.46 |         10.30 |          2.24 |          6.09
+OPTIMIZING ALL POSES
+Objective function took 0.00024050002684816718 s: squaresum 35787188.0 over 34272 residuals. Shape (34272,).
+Jacobian took 0.03924741694936529 s. Shape (34272, 1434), free vars 1434.
+Starting optimization procedure
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1         1.7894e+07                                    1.64e+07    
+       1              2         2.1201e+06      1.58e+07       4.65e+00       3.28e+06    
+       2              3         1.2909e+06      8.29e+05       4.25e+00       1.96e+06    
+       3              5         3.6469e+05      9.26e+05       9.20e-01       1.15e+06    
+       4              6         2.5268e+05      1.12e+05       1.70e+00       1.60e+06    
+       5              7         3.2844e+04      2.20e+05       5.53e-01       3.32e+05    
+       6              9         2.3491e+04      9.35e+03       2.08e-01       9.56e+04    
+       7             10         1.8638e+04      4.85e+03       4.20e-01       1.37e+05    
+       8             11         1.7275e+04      1.36e+03       3.09e-01       1.90e+04    
+       9             13         1.7172e+04      1.03e+02       8.37e-02       1.54e+04    
+      10             14         1.7111e+04      6.11e+01       1.67e-01       6.42e+03    
+      11             16         1.7094e+04      1.65e+01       5.03e-02       1.14e+03    
+      12             17         1.7093e+04      1.86e+00       1.00e-01       2.81e+03    
+      13             18         1.7090e+04      3.00e+00       4.09e-02       5.78e+02    
+      14             19         1.7089e+04      8.59e-02       2.91e-03       2.79e+01    
+      15             20         1.7089e+04      9.77e-03       4.88e-03       4.99e+01    
+      16             21         1.7089e+04      1.95e-03       8.09e-04       1.21e+01    
+      17             22         1.7089e+04      7.81e-03       6.61e-04       2.70e+01    
+      18             29         1.7089e+04      1.95e-03       2.08e-07       2.11e+01    
+      19             32         1.7089e+04      0.00e+00       0.00e+00       2.11e+01    
+`xtol` termination condition is satisfied.
+Function evaluations 32, initial cost 1.7894e+07, final cost 1.7089e+04, first-order optimality 2.11e+01.
+Optimization algorithm converged:	True
+Time needed:				3 seconds
+Testing objective function vs cameralib
+(Minor differences possible due to common board pose in objfun)
+Cam | n objfun      | n cameralib   | max objfun    | med objfun    | max cameralib | med cameralib | diff
+  0 |          5780 |          5780 |         10.31 |          0.97 |         10.32 |          0.97 |          0.00
+  1 |          5780 |          5780 |         12.95 |          2.58 |         12.95 |          2.58 |          0.00
+OPTIMIZING ALL PARAMETERS I
+Objective function took 0.0002382910461165011 s: squaresum 34178.82421875 over 34272 residuals. Shape (34272,).
+Jacobian took 0.040467249986249954 s. Shape (34272, 1454), free vars 1454.
+Starting optimization procedure
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1         1.7089e+04                                    7.74e+04    
+       1              2         1.6586e+04      5.03e+02       1.40e+01       6.99e+04    
+       2              3         1.6577e+04      8.96e+00       1.05e+00       8.98e+01    
+       3              4         1.6577e+04      4.69e-02       5.98e-01       4.72e+01    
+       4              5         1.6577e+04      1.95e-03       2.82e-01       5.44e+01    
+       5              6         1.6577e+04      9.77e-03       7.80e-02       1.33e+02    
+       6              7         1.6577e+04      1.37e-02       2.51e-01       2.94e+01    
+       7              8         1.6577e+04      9.77e-03       5.59e-01       2.60e+01    
+       8             10         1.6577e+04      1.95e-03       5.79e-02       4.06e+01    
+       9             11         1.6577e+04      9.77e-03       8.04e-02       5.58e+01    
+      10             12         1.6577e+04      3.91e-03       1.83e-01       5.01e+01    
+      11             13         1.6577e+04      3.91e-03       3.72e-01       7.44e+01    
+      12             14         1.6577e+04      1.56e-02       3.65e-01       1.03e+02    
+      13             15         1.6577e+04      1.17e-02       3.84e-01       2.63e+02    
+      14             24         1.6577e+04      0.00e+00       0.00e+00       2.63e+02    
+`xtol` termination condition is satisfied.
+Function evaluations 24, initial cost 1.7089e+04, final cost 1.6577e+04, first-order optimality 2.63e+02.
+Optimization algorithm converged:	True
+Time needed:				2 seconds
+Testing objective function vs cameralib
+(Minor differences possible due to common board pose in objfun)
+Cam | n objfun      | n cameralib   | max objfun    | med objfun    | max cameralib | med cameralib | diff
+  0 |          5780 |          5780 |         10.13 |          0.96 |         10.13 |          0.96 |          0.00
+  1 |          5780 |          5780 |         13.16 |          2.60 |         13.16 |          2.60 |          0.00
+OPTIMIZING ALL PARAMETERS III - Removed high error frames
+Discarded 0.00% of detections due to high errors
+Discarded 0.00% of frames due to high errors
+Objective function took 0.000247916963417083 s: squaresum 33153.86328125 over 34272 residuals. Shape (34272,).
+Jacobian took 0.041994750034064054 s. Shape (34272, 1454), free vars 1454.
+Starting optimization procedure
+   Iteration     Total nfev        Cost      Cost reduction    Step norm     Optimality   
+       0              1         1.6577e+04                                    2.63e+02    
+       1             10         1.6577e+04      0.00e+00       0.00e+00       2.63e+02    
+`xtol` termination condition is satisfied.
+Function evaluations 10, initial cost 1.6577e+04, final cost 1.6577e+04, first-order optimality 2.63e+02.
+Optimization algorithm converged:	True
+Time needed:				1 seconds
+Testing objective function vs cameralib
+(Minor differences possible due to common board pose in objfun)
+Cam | n objfun      | n cameralib   | max objfun    | med objfun    | max cameralib | med cameralib | diff
+  0 |          5780 |          5780 |         10.13 |          0.96 |         10.13 |          0.96 |          0.00
+  1 |          5780 |          5780 |         13.16 |          2.60 |         13.16 |          2.60 |          0.00
+SAVE MULTI CAMERA CALIBRATION
+Setting offset to 0!
+Inferring sensor size from image
+Setting offset to 0!
+Inferring sensor size from image
+Saved multi camera calibration to file runs/pair_02/work/calibration_attempts/OFFSET_MINUS_1_CLEAN_ZERO_OFFSETS_01/multicam_calibration
+SAVE FIUGRE WITH DETECTIONS
+FINISHED MULTI CAMERA CALIBRATION

@@ -1,0 +1,23 @@
+pair: pair_06_050_checkerboard_2
+status: rejected_for_calibration
+mode: detection_only
+reason: calibration board was not detectable in either camera
+sampling:
+  start_frame: 0
+  end_frame_exclusive: 1320
+  step: 10
+  sampled_frames_per_camera: 132
+left:
+  frames_processed: 132
+  frames_with_markers: 0
+  frames_without_markers: 132
+  total_marker_detections: 0
+  valid_charuco_frames: 0
+right:
+  frames_processed: 132
+  frames_with_markers: 0
+  frames_without_markers: 132
+  total_marker_detections: 0
+  valid_charuco_frames: 0
+calibration_possible: false
+conclusion: No ArUco or ChArUco detections were obtained, so single-camera and stereo calibration were not attempted.

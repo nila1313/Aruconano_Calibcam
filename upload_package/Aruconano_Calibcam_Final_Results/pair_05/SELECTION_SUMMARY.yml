@@ -1,0 +1,27 @@
+pair: pair_05_040_checkerboard_1
+status: selected_final
+selected_method: offset_plus_5
+alignment: left_t_plus_5_with_right_t
+rms_filtering:
+  calibcam_internal_high_error_filtering: true
+  detections_discarded_percent: 0.0
+  frames_discarded_percent: 0.0
+optimization_converged: true
+function_evaluations_final_stage: 8
+final_cost: 6461.8
+first_order_optimality: 136.0
+selected_initialization_poses: 87
+left:
+  valid_detection_frames: 196
+  median_residual_px: 0.42
+  maximum_residual_px: 20.84
+right:
+  valid_detection_frames: 130
+  median_residual_px: 0.55
+  maximum_residual_px: 16.91
+comparison:
+  given_offset_plus_7_left_median_px: 2.91
+  given_offset_plus_7_right_median_px: 5.43
+  previous_best_left_median_px: 0.42
+  previous_best_right_median_px: 0.56
+note: Offset plus 5 reproduced and slightly improved the previous best right-camera median.

@@ -1,0 +1,12 @@
+pair: pair_02_040_checkerboard_2
+status: selected_final
+selected_method: left_t_with_right_t_plus_1
+alignment: left_t_with_right_t_plus_1
+optimization_converged: true
+left:
+  median_residual_px: 0.96
+  maximum_residual_px: 10.13
+right:
+  median_residual_px: 2.60
+  maximum_residual_px: 13.16
+note: Selected Pair 2 calibration result retained from the verified final run.

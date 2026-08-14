@@ -1,36 +1,40 @@
 schema_version: 1
 dataset:
-  id: pair_01_030_checkerboard_1
-  recording_date: '2023-06-13'
+  id: pair_06_050_checkerboard_2_detection_only
+  recording_date: '2023-06-15'
   rig: 4pi
-  root: calibration_videos/20230613/4pi/030_checkerboard_1
+  root: calibration_videos/20230615/4pi/050_checkerboard_2
+  videos:
+  - calibration_videos/20230615/4pi/050_checkerboard_2/CADDX000011_left.MP4
+  - calibration_videos/20230615/4pi/050_checkerboard_2/CADDX000011_right.MP4
+  board: runs/pair_06/work/source_snapshot/board.npy
 cameras:
 - index: 0
   name: left
-  video: calibration_videos/20230613/4pi/030_checkerboard_1/CADDX000013_left.MP4
+  video: calibration_videos/20230615/4pi/050_checkerboard_2/CADDX000011_left.MP4
   model: omnidir
-  frame_count: 2640
+  frame_count: 1320
   fps: 60.0
   width: 1920
   height: 1080
   codec: h264
-  size_bytes: 181075968
-  sha256: 7aa1441c0faf1acacbe69f5133687c5a21a3514fdf58d946b997e516c1bf85f2
+  size_bytes: 91422720
+  sha256: a74b42441a10f1d384a348d06df90c1802279f958cd1e757169b1259feaaa53b
 - index: 1
   name: right
-  video: calibration_videos/20230613/4pi/030_checkerboard_1/CADDX000013_right.MP4
+  video: calibration_videos/20230615/4pi/050_checkerboard_2/CADDX000011_right.MP4
   model: omnidir
-  frame_count: 2640
+  frame_count: 1320
   fps: 60.0
   width: 1920
   height: 1080
   codec: h264
-  size_bytes: 181075968
-  sha256: a4d8d327c3e4784012a368333c08bb3cb68dce12ca3be2dcfc5cb1575db2239d
+  size_bytes: 91947008
+  sha256: aed828594727a598d213e38da7bb60677762eb10de8f1c5aa6d4dfb17906efc6
 board:
-  canonical_file: calibration_videos/20230613/4pi/030_checkerboard_1/board_small_exact_meters.npy
+  canonical_file: runs/pair_06/work/source_snapshot/board.npy
   canonical_sha256: 69ef6a2f5708b978483b278d43b374a3576f908b5adfb71da8afdfab8e684ff5
-  legacy_reference_file: calibration_videos/20230613/4pi/030_checkerboard_1/board.npy
+  legacy_reference_file: calibration_videos/boards/bboboard-v4.npy
   legacy_reference_sha256: 14ea991cab22e681af2414fdd805f36d5f1e18ad479baf1456674440f698ae88
   width: 5
   height: 6
@@ -44,8 +48,8 @@ board:
   unit: m
 frame_selection:
   start: 0
-  end: null
-  step: 20
+  end: 1320
+  step: 10
   camera_offsets:
   - 0
   - 0
@@ -54,11 +58,11 @@ detection:
   minimum_charuco_corners: 5
   retain_detection_yaml: true
   retain_raw_detection_csv: true
-  write_annotated_frames: true
+  write_annotated_frames: false
 calibration:
   engine: calibcam
-  run_single_camera: true
-  run_multi_camera: true
+  run_single_camera: false
+  run_multi_camera: false
   models:
   - omnidir
   - omnidir

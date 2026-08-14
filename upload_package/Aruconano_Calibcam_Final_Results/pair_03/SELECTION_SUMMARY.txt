@@ -1,0 +1,35 @@
+PAIR 3 SELECTED CALIBRATION
+
+Selected alignment:
+Left(t+1) <-> Right(t)
+
+Signed offset:
++1
+
+Reason for selection:
+Lowest final optimization cost and lowest residual errors among tested offsets.
+
+Offset comparison:
+Offset 0:
+  Final cost: 31367
+  Left median: 0.39 px
+  Right median: 0.42 px
+  Left max: 26.27 px
+  Right max: 27.26 px
+
+Offset +1:
+  Final cost: 1785.4
+  Left median: 0.20 px
+  Right median: 0.27 px
+  Left max: 6.59 px
+  Right max: 7.66 px
+
+Offset +2:
+  Final cost: 34131
+  Left median: 0.35 px
+  Right median: 0.45 px
+  Left max: 31.29 px
+  Right max: 29.04 px
+
+All three optimization stages converged.
+CalibCam exit status: 0

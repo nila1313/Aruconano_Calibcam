@@ -1,6 +1,6 @@
 schema_version: 1
 dataset:
-  id: pair_01_030_checkerboard_1
+  id: pair_01_left_1_right_0
   recording_date: '2023-06-13'
   rig: 4pi
   root: calibration_videos/20230613/4pi/030_checkerboard_1
@@ -47,14 +47,14 @@ frame_selection:
   end: null
   step: 20
   camera_offsets:
-  - 0
+  - 1
   - 0
 detection:
   backend: aruco_nano
   minimum_charuco_corners: 5
   retain_detection_yaml: true
   retain_raw_detection_csv: true
-  write_annotated_frames: true
+  write_annotated_frames: false
 calibration:
   engine: calibcam
   run_single_camera: true

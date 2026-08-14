@@ -1,0 +1,68 @@
+{calibs: [{A: [[1358.8484246360365, 0.0, 963.6606357884327], [0.0, 1367.740272439433,
+          537.2409342292917], [0.0, 0.0, 1.0]], k: [-0.3892355778078819, 0.12617713895934646,
+        0.0013781730278075506, 0.003981143459078154, -0.019533902624662564], rvec_cam: [
+        0.0, 0.0, 0.0], sensor_size: [1920, 1080], tvec_cam: [0.0, 0.0, 0.0], xi: [
+        0.6285939549050016]}, {A: [[1340.0416023827252, 0.0, 971.4981675419448], [
+          0.0, 1345.6711384373393, 525.0950412120077], [0.0, 0.0, 1.0]], k: [-0.45215857590362485,
+        0.28006517894962496, 0.003917214140637283, 0.0006608440709485043, -0.10939297961558028],
+      rvec_cam: [-0.01378348389337593, -0.3411364924622999, -0.2649539772702025],
+      sensor_size: [1920, 1080], tvec_cam: [-0.028638664800875454, 0.007682578046359821,
+        -0.008803989743968784], xi: [0.6116839099423355]}], info: {board_params: [
+      &id001 {boardHeight: 6, boardWidth: 5, dictionary_type: 10, legacy: false, marker_size: 0.6666666666666666,
+        marker_size_real: 0.013333333333333332, square_size: 1, square_size_real: 0.02,
+        square_size_real_x: 0.019926, square_size_real_y: 0.02, unit: m}, *id001],
+    opts: {RC_reject_corners: false, allow_unequal_n_frame: true, aruco_calibration: [
+        {criteria: [3.0, 30.0, 1.1920928955078125e-07], flags: 2}, {criteria: [3.0,
+            30.0, 1.1920928955078125e-07], flags: 2}], calibration_multi: true, calibration_single: true,
+      color_convert: false, common_pose_r_err: 0.1, coord_cam: 0, corners_min_n: 5,
+      debug: true, detect_cpu_divisor: 6, detection: [runs/pair_07/calibration/RIGHT_PLUS_7_LEFT_T_RIGHT_T_PLUS_7/inputs/detection_000_left.yml,
+        runs/pair_07/calibration/RIGHT_PLUS_7_LEFT_T_RIGHT_T_PLUS_7/inputs/detection_001_right.yml],
+      detection_opts: {aruco_detect: {parameters: {adaptiveThreshWinSizeMax: 23, adaptiveThreshWinSizeMin: 3,
+            adaptiveThreshWinSizeStep: 10, cornerRefinementMaxIterations: 30, cornerRefinementMethod: 1,
+            cornerRefinementMinAccuracy: 0.01, cornerRefinementWinSize: 5, errorCorrectionRate: 0.3,
+            perspectiveRemovePixelPerCell: 8}}, aruco_interpolate: {minMarkers: 1},
+        aruco_refine: {checkAllOrders: true, errorCorrectionRate: 1.0, minRepDistance: 3.0,
+          parameters: {adaptiveThreshWinSizeMax: 23, adaptiveThreshWinSizeMin: 3,
+            adaptiveThreshWinSizeStep: 10, cornerRefinementMaxIterations: 30, cornerRefinementMethod: 1,
+            cornerRefinementMinAccuracy: 0.01, cornerRefinementWinSize: 5, errorCorrectionRate: 0.3,
+            perspectiveRemovePixelPerCell: 8}}, clahe: true, inter_frame_dist: 3.0,
+        min_corners: 5, radial_contrast_reject: {norm_mean: 0.311, normalize: 50,
+          options: {lib: np}, width: 20}}, frames_end: 2640, frames_lists: false,
+      frames_offsets: [0, 0], frames_start: 0, frames_step: 10, free_vars: [{A: [
+            [true, false, true], [false, true, true], [false, false, false]], board_poses: true,
+          cam_pose: true, k: [1, 1, 1, 1, 1], xi: true}, {A: [[true, false, true],
+            [false, true, true], [false, false, false]], board_poses: true, cam_pose: true,
+          k: [1, 1, 1, 1, 1], xi: true}], init_extrinsics: {rvecs_cam: [[0.0, 0.0,
+            0.0], [0.0, 0.0, 0.0]], tvecs_cam: [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]},
+      init_extrinsics_frames: [], jax_backend: cpu, max_allowed_res: 50, models: [
+        omnidir, omnidir], n_cams: 2, numerical_jacobian: false, optimization: {ftol: 1.0e-09,
+        gtol: 1.0e-09, loss: linear, max_nfev: 500, method: trf, tr_solver: lsmr,
+        verbose: 2, x_scale: jac, xtol: 1.0e-09}, optimize_board_poses: false, optimize_ind_cams: false,
+      parallelize: false, pose_estimation: {use_required_corners: true}, sensorsize: [
+        [1920, 1080], [1920, 1080]]}, other: {}, rec_file_names: [calibration_videos/20230615/4pi/090_checkerboard_3/CADDX000021_left.MP4,
+      calibration_videos/20230615/4pi/090_checkerboard_3/CADDX000019_right.MP4], used_frames_ids: [
+      [280, 290, 300, 310, 320, 340, 350, 360, 370, 380, 390, 400, 410, 420, 430,
+        440, 450, 460, 470, 480, 490, 500, 510, 520, 530, 540, 550, 560, 570, 580,
+        590, 600, 610, 620, 630, 640, 650, 660, 670, 680, 690, 700, 710, 720, 730,
+        800, 810, 820, 830, 840, 880, 890, 900, 910, 920, 930, 940, 950, 960, 970,
+        980, 990, 1000, 1010, 1020, 1050, 1060, 1070, 1080, 1090, 1100, 1110, 1120,
+        1190, 1230, 1240, 1250, 1260, 1270, 1280, 1290, 1300, 1310, 1320, 1330, 1340,
+        1400, 1410, 1420, 1430, 1450, 1460, 1470, 1480, 1490, 1500, 1510, 1520, 1530,
+        1540, 1550, 1560, 1620, 1630, 1640, 1650, 1660, 1980, 1990, 2000, 2010, 2020,
+        2030, 2040, 2050], [-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 560, 570, 580, 590, 600,
+        -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, 710, -1, -1, 800, -1, 820, 830, -1,
+        880, 890, 900, 910, 920, 930, 940, 950, 960, 970, 980, 990, 1000, 1010, 1020,
+        1050, -1, -1, -1, -1, -1, -1, -1, -1, -1, 1240, 1250, 1260, 1270, 1280, 1290,
+        1300, -1, -1, -1, -1, -1, -1, 1420, -1, -1, -1, -1, -1, 1490, 1500, 1510,
+        1520, 1530, 1540, -1, -1, -1, -1, -1, 1650, 1660, -1, 1990, 2000, 2010, 2020,
+        2030, 2040, -1]], vid_headers: [{codec: h264, compatible_brands: mp41, creation_time: '2015-01-27T09:02:03.000000Z',
+        duration: 44.0, encoder: iCatch AVCC, fps: 60.0, handler_name: Video Handler,
+        language: eng, long_codec: H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10, major_brand: mp42,
+        minor_version: '0', num_frames: 2640, offset: [0, 0], profile: High, sensorsize: [
+          1920, 1080], video_format: yuv420p}, {codec: h264, compatible_brands: mp41,
+        creation_time: '2015-12-14T01:57:03.000000Z', duration: 44.0, encoder: iCatch
+          AVCC, fps: 60.0, handler_name: Video Handler, language: eng, long_codec: H.264
+          / AVC / MPEG-4 AVC / MPEG-4 part 10, major_brand: mp42, minor_version: '0',
+        num_frames: 2640, offset: [0, 0], profile: High, sensorsize: [1920, 1080],
+        video_format: yuv420p}]}, version: 4}

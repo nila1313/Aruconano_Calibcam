@@ -1,0 +1,27 @@
+pair: pair_07_090_checkerboard_3
+status: selected_final
+selected_method: right_plus_7
+alignment: left_t_with_right_t_plus_7
+optimization_converged: true
+function_evaluations_final_stage: 10
+final_cost: 6556.7
+first_order_optimality: 129.0
+shared_stereo_frames: 47
+rms_filtering:
+  calibcam_internal_high_error_filtering: true
+  detections_discarded_percent: 0.0
+  frames_discarded_percent: 0.0
+left:
+  valid_detection_frames: 115
+  median_residual_px: 0.42
+  maximum_residual_px: 15.34
+right:
+  valid_detection_frames: 47
+  median_residual_px: 1.40
+  maximum_residual_px: 18.17
+comparison:
+  given_right_plus_6_left_median_px: 0.61
+  given_right_plus_6_right_median_px: 5.08
+  previous_best_left_median_px: 0.45
+  previous_best_right_median_px: 1.21
+conclusion: Right plus 7 is clearly better than the given right plus 6 alignment and remains the selected Pair 7 calibration.

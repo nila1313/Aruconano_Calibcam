@@ -1,0 +1,23 @@
+pair: pair_04_080_checkerboard_4
+status: provisional_final
+selected_method: offset_0_rms7
+alignment: left_t_with_right_t
+rms_threshold_px: 7.0
+optimization_max_nfev: 1000
+optimization_converged: true
+function_evaluations: 703
+final_cost: 7988.4
+first_order_optimality: 26.8
+shared_filtered_frames: 21
+left:
+  median_residual_px: 0.90
+  maximum_residual_px: 9.47
+right:
+  median_residual_px: 2.41
+  maximum_residual_px: 11.41
+comparison:
+  baseline_left_median_px: 1.09
+  baseline_right_median_px: 4.15
+  rms8_left_median_px: 0.94
+  rms8_right_median_px: 2.74
+note: Selected as the current final result. Further threshold optimization was intentionally stopped.
